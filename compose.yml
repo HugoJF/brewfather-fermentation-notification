@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    env_file: .env
     container_name: brewfather-fermentation-notification
     restart: unless-stopped
     ports:
