@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: brewfather-fermentation-notification
+    restart: unless-stopped
+    ports:
+      - "5656:3000"
