@@ -4,5 +4,7 @@ services:
     env_file: .env
     container_name: brewfather-fermentation-notification
     restart: unless-stopped
+    volumes:
+      - ./data:/usr/src/app/data
     ports:
       - "5656:3000"
